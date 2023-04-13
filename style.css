@@ -47,9 +47,13 @@ body {
 }
 
 .back-to-home {
-  display: block;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 100px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  background-color: #d54215;
+  color: #fff;
 }
 
 .ingredients {
