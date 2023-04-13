@@ -6,17 +6,37 @@ html {
 .container {
   width: 80%;
   /* max-width: 1440px; */
-  margin: 0 auto;
+  margin: 56px auto;
   text-align: center;
 }
 
 .container p {
   line-height: 1.5;
-  width: 700px;
+  width: 800px;
   text-align: justify;
   margin: 0 auto;
 }
 
 .container img {
   margin-bottom: 24px;
+  border-radius: 50px;
+}
+
+.recipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.recipe__list {
+  margin: 20px;
+}
+.recipe__list a:link,
+.recipe__list a:visited,
+.recipe__list a:active {
+  color: #fff;
+  text-decoration: none;
+  background: #d54215;
+  padding: 8px 24px;
+  border-radius: 100px;
 }
