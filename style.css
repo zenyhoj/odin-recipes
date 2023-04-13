@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 
-html {
+:root {
   font-family: "Roboto", sans-serif;
 }
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .container {
-  width: 80%;
+  /* width: 80%; */
   /* max-width: 1440px; */
   margin: 56px auto;
   text-align: center;
@@ -12,7 +16,7 @@ html {
 
 .container p {
   line-height: 1.5;
-  width: 800px;
+  /* width: 800px; */
   text-align: justify;
   margin: 0 auto;
 }
@@ -27,9 +31,10 @@ html {
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  padding: 0;
 }
 .recipe__list {
-  margin: 20px;
+  margin: 8px;
 }
 .recipe__list a:link,
 .recipe__list a:visited,
@@ -39,4 +44,63 @@ html {
   background: #d54215;
   padding: 8px 24px;
   border-radius: 100px;
+}
+
+.back-to-home {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  /* width: 800px; */
+  margin: 0 auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.ingredients ul {
+  padding-left: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
+}
+
+.ingredients li {
+  text-align: left;
+
+  /* display: block; */
+}
+
+.ingredients li::before {
+  content: "• ";
+  color: #d54215;
+}
+
+.ingredients h4 {
+  text-align: left;
+  font-size: 2rem;
+  margin: 12px 0;
+  text-decoration: underline;
+}
+.steps {
+  /* width: 800px; */
+  margin: 0 auto;
+}
+
+.steps h4 {
+  margin: 12px 0;
+  font-size: 2rem;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.step-span {
+  font-weight: 700;
+}
+
+.steps p {
+  margin-bottom: 12px;
 }
